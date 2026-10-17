@@ -67,6 +67,7 @@ window.I18N = {
     openMaps: "افتح في خرائط جوجل",
     finaleTitle: "موعدك القادم يبدأ برسالة",
     rights: "جميع الحقوق محفوظة.",
+    createdBy: "أُنشئ بواسطة",
     backTop: "العودة إلى الأعلى ↑",
     _title: "صالون 963 | نادي العناية بالرجل",
     _switch: "EN"
@@ -138,6 +139,7 @@ window.I18N = {
     openMaps: "Open in Google Maps",
     finaleTitle: "Your next appointment starts with a message",
     rights: "All rights reserved.",
+    createdBy: "Created by",
     backTop: "Back to top ↑",
     _title: "Salon 963 | Grooming Club",
     _switch: "ع"

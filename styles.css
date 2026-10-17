@@ -902,6 +902,27 @@ html[lang="ar"] .finale__title { line-height: 1.35; }
 .footer__top { padding: 10px 0; font-size: 12px; letter-spacing: 0.2em; text-transform: uppercase; color: var(--ivory-dim); transition: color 0.3s; }
 html[lang="ar"] .footer__top { letter-spacing: 0; font-size: 14px; }
 .footer__top:hover { color: var(--gold); }
+.footer__credit {
+  display: flex;
+  justify-content: center;
+  margin-top: 28px;
+  padding-top: 20px;
+  border-top: 1px solid var(--line);
+}
+.credit {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  min-height: 44px;
+  font-size: 13px;
+  color: var(--muted);
+  opacity: 0.85;
+  transition: color 0.6s ease, opacity 0.6s ease;
+}
+.credit img { width: 40px; height: 24px; object-fit: contain; }
+.credit__name { font-family: "Montserrat", sans-serif; font-weight: 600; letter-spacing: 0.08em; color: var(--ivory-dim); transition: color 0.6s ease; }
+.credit:hover { opacity: 1; color: var(--ivory-dim); }
+.credit:hover .credit__name { color: var(--ivory); }
 
 /* WhatsApp float */
 .wa-float {
