@@ -56,12 +56,9 @@
   function finishLoading() { body.classList.add("is-loaded"); }
   if (reduceMotion) finishLoading();
   else {
-    var started = Date.now();
-    window.addEventListener("load", function () {
-      // let the scissors finish their cut (1s delay + 1.6s travel) before splitting
-      setTimeout(finishLoading, Math.max(0, 2700 - (Date.now() - started)));
-    });
-    setTimeout(finishLoading, 5000); // safety net
+    // open right after the scissors finish their cut (0.55s delay + 0.95s travel);
+    // the DOM is ready here, images keep loading behind the reveal
+    setTimeout(finishLoading, 1600);
   }
 
   /* ---------- Year ---------- */
@@ -125,11 +122,11 @@
   // Stagger siblings that reveal together
   document.querySelectorAll(".svc, .ritual__grid, .contact, .stats").forEach(function (group) {
     group.querySelectorAll(".reveal").forEach(function (el, i) {
-      el.style.setProperty("--d", (i * 0.08).toFixed(2) + "s");
+      el.style.setProperty("--d", (i * 0.05).toFixed(2) + "s");
     });
   });
   document.querySelectorAll(".hero .reveal").forEach(function (el, i) {
-    el.style.setProperty("--d", (0.5 + i * 0.12).toFixed(2) + "s");
+    el.style.setProperty("--d", (0.2 + i * 0.07).toFixed(2) + "s");
   });
 
   if ("IntersectionObserver" in window && !reduceMotion) {
