@@ -35,6 +35,7 @@
     document.querySelectorAll(".media__sound").forEach(function (btn) {
       btn.setAttribute("aria-label", dict[btn.getAttribute("aria-pressed") === "true" ? "soundOff" : "soundOn"]);
     });
+    updateThemeLabel();
     document.title = dict._title;
     var label = document.querySelector("[data-lang-label]");
     if (label) label.textContent = dict._switch;
@@ -42,6 +43,22 @@
     if (toggle) toggle.setAttribute("aria-label", lang === "ar" ? "Switch to English" : "التبديل إلى العربية");
     try { localStorage.setItem("963-lang", lang); } catch (e) {}
   }
+
+  /* ---------- Theme ---------- */
+  var themeBtn = document.getElementById("themeToggle");
+  var themeMeta = document.querySelector('meta[name="theme-color"]');
+  function updateThemeLabel() {
+    var light = root.getAttribute("data-theme") === "light";
+    var dict = window.I18N[root.lang];
+    themeBtn.setAttribute("aria-label", dict[light ? "themeToDark" : "themeToLight"]);
+    if (themeMeta) themeMeta.setAttribute("content", light ? "#f5f0e6" : "#0b0c0d");
+  }
+  themeBtn.addEventListener("click", function () {
+    var next = root.getAttribute("data-theme") === "light" ? "dark" : "light";
+    root.setAttribute("data-theme", next);
+    try { localStorage.setItem("963-theme", next); } catch (e) {}
+    updateThemeLabel();
+  });
 
   applyLang(storedLang() || "ar");
 
@@ -96,6 +113,7 @@
 
   function setMenu(open) {
     burger.setAttribute("aria-expanded", String(open));
+    nav.classList.toggle("menu-open", open);
     if (open) {
       menu.hidden = false;
       requestAnimationFrame(function () { menu.classList.add("is-open"); });

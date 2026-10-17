@@ -4,13 +4,18 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <script>
-    /* set language + direction before first paint, so nothing animates the wrong way round */
+    /* set language, direction and theme before first paint: no wrong-way animation, no theme flash */
     (function () {
       try {
         var q = new URLSearchParams(location.search).get("lang");
         var l = q === "ar" || q === "en" ? q : localStorage.getItem("963-lang");
         if (l === "en") { var r = document.documentElement; r.lang = "en"; r.dir = "ltr"; }
       } catch (e) {}
+      try {
+        var t = localStorage.getItem("963-theme");
+        if (t !== "light" && t !== "dark") t = window.matchMedia("(prefers-color-scheme: light)").matches ? "light" : "dark";
+        document.documentElement.setAttribute("data-theme", t);
+      } catch (e) { document.documentElement.setAttribute("data-theme", "dark"); }
     })();
   </script>
   <title>963 SALON | Grooming Club</title>
@@ -76,6 +81,10 @@
       </nav>
 
       <div class="nav__actions">
+        <button class="lang theme" type="button" id="themeToggle" aria-label="Light mode">
+          <svg class="i i--sun" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2.5v2.2M12 19.3v2.2M2.5 12h2.2M19.3 12h2.2M5.3 5.3l1.6 1.6M17.1 17.1l1.6 1.6M18.7 5.3l-1.6 1.6M6.9 17.1l-1.6 1.6"/></svg>
+          <svg class="i i--moon" viewBox="0 0 24 24" aria-hidden="true"><path d="M20 14.5A8 8 0 0 1 9.5 4a8 8 0 1 0 10.5 10.5z"/></svg>
+        </button>
         <button class="lang" type="button" id="langToggle" aria-label="Switch language">
           <span data-lang-label>EN</span>
         </button>
@@ -395,6 +404,6 @@
   </a>
 
   <script src="i18n.js?v=20261020"></script>
-  <script src="main.js?v=20261021"></script>
+  <script src="main.js?v=20261022"></script>
 </body>
 </html>
