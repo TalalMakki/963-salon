@@ -1,4 +1,4 @@
-/* Salon 963 — translations (ar / en) */
+/* 963 SALON — translations (ar / en) */
 window.I18N = {
   ar: {
     skip: "تخطَّ إلى المحتوى",
@@ -7,7 +7,7 @@ window.I18N = {
     navFilms: "من داخل 963",
     navVisit: "زُرنا",
     bookNow: "احجز الآن",
-    heroEyebrow: "صالون 963 — نادي العناية بالرجل",
+    heroEyebrow: "963 SALON — نادي العناية بالرجل",
     heroL1: "فخامة العناية",
     heroL2: "للرجل العصري",
     heroLead: "حلاقةٌ متقنة، وعنايةٌ بالبشرة، ولحظاتُ استرخاءٍ في مساحةٍ صُمِّمت لتليق بك، في قلب التجمع الأول.",
@@ -69,7 +69,7 @@ window.I18N = {
     rights: "جميع الحقوق محفوظة.",
     createdBy: "أُنشئ بواسطة",
     backTop: "العودة إلى الأعلى ↑",
-    _title: "صالون 963 | نادي العناية بالرجل",
+    _title: "963 SALON | نادي العناية بالرجل",
     _switch: "EN"
   },
   en: {
@@ -79,7 +79,7 @@ window.I18N = {
     navFilms: "Inside 963",
     navVisit: "Visit",
     bookNow: "Book Now",
-    heroEyebrow: "Salon 963 — Grooming Club",
+    heroEyebrow: "963 SALON — Grooming Club",
     heroL1: "Luxury Grooming",
     heroL2: "for Modern Men",
     heroLead: "Precision barbering, skin care and moments of calm, in a space crafted to suit you — in the heart of the 1st Settlement.",
@@ -141,7 +141,7 @@ window.I18N = {
     rights: "All rights reserved.",
     createdBy: "Created by",
     backTop: "Back to top ↑",
-    _title: "Salon 963 | Grooming Club",
+    _title: "963 SALON | Grooming Club",
     _switch: "ع"
   }
 };

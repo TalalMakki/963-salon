@@ -1,4 +1,4 @@
-/* Salon 963 — interactions */
+/* 963 SALON — interactions */
 (function () {
   "use strict";
 
@@ -26,7 +26,10 @@
       el.textContent = dict[key];
       if (dict[key].indexOf("963") !== -1) {
         // single wrapper so flex parents (e.g. .eyebrow) keep it as one text run
-        el.innerHTML = "<span>" + el.innerHTML.replace(/963/g, '<span class="n963">963</span>') + "</span>";
+        el.innerHTML = "<span>" + el.innerHTML.replace(/963 SALON|963/g, function (m) {
+          // keep the full name as one left-to-right run so "963 SALON" never flips inside Arabic text
+          return m === "963" ? '<span class="n963">963</span>' : '<span dir="ltr" class="bn"><span class="n963">963</span> SALON</span>';
+        }) + "</span>";
       }
     });
     document.querySelectorAll(".media__sound").forEach(function (btn) {

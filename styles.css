@@ -1,5 +1,5 @@
 /* =========================================================
-   Salon 963 — Grooming Club
+   963 SALON — Grooming Club
    Brand: obsidian black · ivory · champagne brass
    ========================================================= */
 
@@ -336,6 +336,7 @@ html[lang="ar"] .btn--sm { font-size: 12.5px; }
 }
 
 /* "963" written inside text, in a face close to the logo */
+.bn { unicode-bidi: isolate; white-space: nowrap; }
 .n963 {
   font-family: var(--f-mark);
   font-style: normal;
