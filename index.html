@@ -1,0 +1,381 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Salon 963 | Grooming Club</title>
+  <meta name="description" content="Salon 963 — Luxury grooming for modern men. Barbering, skin care and relaxation at X Mall, New Cairo.">
+  <meta name="theme-color" content="#0b0c0d">
+  <meta property="og:title" content="Salon 963 | Grooming Club">
+  <meta property="og:description" content="Luxury Grooming for Modern Men — X Mall, New Cairo">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Alexandria:wght@200;300;400&family=IBM+Plex+Sans+Arabic:wght@300;400;500&family=Cormorant:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Squada+One&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="icon" href="asset/logo-badge.png">
+  <link rel="preload" as="image" href="asset/logo-badge.png">
+</head>
+<body>
+
+  <!-- Preloader -->
+  <div class="loader" aria-hidden="true">
+    <div class="loader__half loader__half--top">
+      <img class="loader__logo" src="asset/logo-badge.png" alt="" width="200" height="200">
+    </div>
+    <div class="loader__half loader__half--bottom">
+      <img class="loader__logo" src="asset/logo-badge.png" alt="" width="200" height="200">
+    </div>
+    <div class="loader__scissors">
+      <svg viewBox="0 0 130 60" width="195" height="90">
+        <defs>
+          <linearGradient id="bladeGold" x1="0" y1="0" x2="1" y2="1">
+            <stop offset="0" stop-color="#e2c993"/>
+            <stop offset=".55" stop-color="#c6a46a"/>
+            <stop offset="1" stop-color="#8f7445"/>
+          </linearGradient>
+        </defs>
+        <g class="blade blade--a">
+          <path d="M30 41 L50 27" class="arm"/>
+          <circle cx="21" cy="46" r="10" class="ring"/>
+          <path d="M46 30 L127 30 Q100 23 46 25 Z" class="edge"/>
+        </g>
+        <g class="blade blade--b">
+          <path d="M30 19 L50 33" class="arm"/>
+          <circle cx="21" cy="14" r="10" class="ring"/>
+          <path d="M46 30 L127 30 Q100 37 46 35 Z" class="edge"/>
+        </g>
+        <circle cx="50" cy="30" r="3.2" class="pivot"/>
+      </svg>
+    </div>
+  </div>
+
+  <a class="skip" href="#main" data-i18n="skip">تخطَّ إلى المحتوى</a>
+
+  <!-- Header -->
+  <header class="nav" id="top">
+    <div class="nav__inner">
+      <a href="#hero" class="brand" aria-label="Salon 963">
+        <img class="brand__logo" src="asset/logo-badge.png" alt="Salon 963" width="56" height="56">
+      </a>
+
+      <nav class="nav__links" aria-label="Main">
+        <a href="#about" data-i18n="navAbout">عن الصالون</a>
+        <a href="#services" data-i18n="navServices">الخدمات</a>
+        <a href="#films" data-i18n="navFilms">من داخل 963</a>
+        <a href="#visit" data-i18n="navVisit">زُرنا</a>
+      </nav>
+
+      <div class="nav__actions">
+        <button class="lang" type="button" id="langToggle" aria-label="Switch language">
+          <span data-lang-label>EN</span>
+        </button>
+        <a class="btn btn--sm btn--gold" href="https://wa.me/201044272482" target="_blank" rel="noopener" data-i18n="bookNow">احجز الآن</a>
+        <button class="burger" type="button" aria-label="Menu" aria-expanded="false" aria-controls="mobileMenu">
+          <span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile menu -->
+  <div class="menu" id="mobileMenu" hidden>
+    <nav class="menu__links" aria-label="Mobile">
+      <a href="#about"><span class="menu__num">01</span><span data-i18n="navAbout">عن الصالون</span></a>
+      <a href="#services"><span class="menu__num">02</span><span data-i18n="navServices">الخدمات</span></a>
+      <a href="#films"><span class="menu__num">03</span><span data-i18n="navFilms">من داخل 963</span></a>
+      <a href="#visit"><span class="menu__num">04</span><span data-i18n="navVisit">زُرنا</span></a>
+    </nav>
+    <div class="menu__foot">
+      <a href="tel:+201044272482" dir="ltr">+20 104 427 2482</a>
+      <a href="https://www.instagram.com/963_salon/" target="_blank" rel="noopener">@963_salon</a>
+    </div>
+  </div>
+
+  <main id="main">
+
+    <!-- Hero -->
+    <section class="hero" id="hero">
+      <div class="hero__media">
+        <picture>
+          <source srcset="asset/hero.webp 820w, asset/hero@2x.webp 1640w" sizes="(max-width: 1024px) 230vh, 100vw" type="image/webp">
+          <img src="asset/hero@2x.jpg" srcset="asset/hero.png 820w, asset/hero@2x.jpg 1640w" sizes="(max-width: 1024px) 230vh, 100vw" alt="Salon 963" width="1640" height="720" fetchpriority="high">
+        </picture>
+      </div>
+      <div class="hero__shade" aria-hidden="true"></div>
+      <div class="hero__grid container">
+        <div class="hero__copy">
+          <p class="eyebrow reveal" data-i18n="heroEyebrow">صالون 963 — نادي العناية بالرجل</p>
+          <h1 class="hero__title">
+            <span class="line"><span data-i18n="heroL1">فخامة العناية</span></span>
+            <span class="line"><em data-i18n="heroL2">للرجل العصري</em></span>
+          </h1>
+          <p class="hero__lead reveal" data-i18n="heroLead">حلاقةٌ متقنة، وعنايةٌ بالبشرة، ولحظاتُ استرخاءٍ في مساحةٍ صُمِّمت لتليق بك، في قلب التجمع الأول.</p>
+          <div class="hero__cta reveal">
+            <a class="btn btn--gold" href="https://wa.me/201044272482" target="_blank" rel="noopener">
+              <span data-i18n="bookWhatsapp">احجز عبر واتساب</span>
+              <svg class="i flip" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+            </a>
+            <a class="btn btn--ghost" href="#services" data-i18n="exploreServices">اكتشف الخدمات</a>
+          </div>
+          <ul class="hero__meta reveal">
+            <li><span data-i18n="metaBarber">حلاقة</span></li>
+            <li><span data-i18n="metaSkin">عناية بالبشرة</span></li>
+            <li><span data-i18n="metaRelax">استرخاء</span></li>
+          </ul>
+        </div>
+      </div>
+
+      <a href="#about" class="scroll-cue" aria-label="Scroll">
+        <span data-i18n="scroll">مرِّر</span>
+        <span class="scroll-cue__line"></span>
+      </a>
+    </section>
+
+    <!-- About -->
+    <section class="about section" id="about">
+      <div class="container about__grid">
+        <figure class="about__film reveal-frame">
+          <div class="frame">
+            <span class="frame__corner tl"></span><span class="frame__corner tr"></span>
+            <span class="frame__corner bl"></span><span class="frame__corner br"></span>
+            <div class="media" style="--ar: 960 / 718">
+              <video class="media__video" data-src="asset/video/hero.mp4" poster="asset/video/hero-poster.jpg" muted loop playsinline preload="none" aria-label="Salon 963 — film"></video>
+              <button class="media__sound" type="button" aria-pressed="false" aria-label="تشغيل الصوت">
+                <svg class="i i--off" viewBox="0 0 24 24" aria-hidden="true"><path d="M11 5 6 9H3v6h3l5 4z"/><path d="m22 9-6 6M16 9l6 6"/></svg>
+                <svg class="i i--on" viewBox="0 0 24 24" aria-hidden="true"><path d="M11 5 6 9H3v6h3l5 4z"/><path d="M15.5 8.5a5 5 0 0 1 0 7M19 5a10 10 0 0 1 0 14"/></svg>
+              </button>
+            </div>
+          </div>
+          <figcaption class="film__cap"><span class="dot"></span><span data-i18n="heroCap">من داخل الصالون</span></figcaption>
+        </figure>
+        <div class="about__copy">
+          <p class="eyebrow reveal" data-i18n="aboutEyebrow">فلسفتنا</p>
+          <h2 class="h2 reveal" data-i18n="aboutTitle">التفاصيل الصغيرة تصنع الحضور الكبير</h2>
+          <p class="body reveal" data-i18n="aboutP1">نؤمن في 963 بأن العناية طقسٌ لا روتين؛ فكل قصّةٍ، وكل تحديدٍ للحية، وكل جلسةِ عنايةٍ بالبشرة تُنفَّذ بدقة الحِرفي وهدوء المكان الفاخر.</p>
+          <p class="body reveal" data-i18n="aboutP2">فريقٌ محترف، وأدواتٌ معقَّمة، ومنتجاتٌ منتقاة بعناية؛ لتخرج بإطلالةٍ تشبهك، ولكن في أبهى حالاتها.</p>
+          <dl class="stats reveal">
+            <div><dt data-i18n="stat1k">حرفية</dt><dd data-i18n="stat1v">حلاقون محترفون</dd></div>
+            <div><dt data-i18n="stat2k">خصوصية</dt><dd data-i18n="stat2v">تجربةٌ هادئة ومريحة</dd></div>
+            <div><dt data-i18n="stat3k">نظافة</dt><dd data-i18n="stat3v">أدواتٌ معقَّمة دائمًا</dd></div>
+          </dl>
+        </div>
+      </div>
+    </section>
+
+    <!-- Services -->
+    <section class="services section" id="services">
+      <div class="container">
+        <header class="section__head">
+          <p class="eyebrow reveal" data-i18n="servicesEyebrow">الخدمات</p>
+          <h2 class="h2 reveal" data-i18n="servicesTitle">طقوس العناية في 963</h2>
+        </header>
+
+        <ol class="svc">
+          <li class="svc__item reveal">
+            <span class="svc__no">01</span>
+            <div class="svc__body">
+              <h3 data-i18n="s1t">قصّ الشعر</h3>
+              <p data-i18n="s1d">قصّاتٌ كلاسيكية وعصرية تُصمَّم وفق ملامح وجهك، مع غسلٍ وتصفيفٍ نهائي.</p>
+            </div>
+            <svg class="svc__icon" viewBox="0 0 24 24" aria-hidden="true"><circle cx="6" cy="6" r="3"/><circle cx="6" cy="18" r="3"/><path d="M20 4 8.12 15.88M14.47 14.48 20 20M8.12 8.12 12 12"/></svg>
+          </li>
+          <li class="svc__item reveal">
+            <span class="svc__no">02</span>
+            <div class="svc__body">
+              <h3 data-i18n="s2t">تهذيب اللحية والحلاقة</h3>
+              <p data-i18n="s2d">تحديدٌ دقيق، وحلاقةٌ بالموسى والمنشفة الساخنة، وزيوتٌ تغذّي اللحية والبشرة.</p>
+            </div>
+            <svg class="svc__icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 20 15 9"/><path d="m14 4 6 6-3 3-6-6z"/><path d="M4 20h4"/></svg>
+          </li>
+          <li class="svc__item reveal">
+            <span class="svc__no">03</span>
+            <div class="svc__body">
+              <h3 data-i18n="s3t">العناية بالبشرة</h3>
+              <p data-i18n="s3d">تنظيفٌ عميق، وأقنعةٌ وعلاجاتٌ مصمَّمة خصيصًا لاحتياجات بشرة الرجل.</p>
+            </div>
+            <svg class="svc__icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3c3 4 6 7 6 11a6 6 0 0 1-12 0c0-4 3-7 6-11z"/></svg>
+          </li>
+          <li class="svc__item reveal">
+            <span class="svc__no">04</span>
+            <div class="svc__body">
+              <h3 data-i18n="s4t">الاسترخاء</h3>
+              <p data-i18n="s4d">تدليكٌ للرأس والكتفين، ولحظاتُ هدوءٍ تعيد إليك توازنك في خضمّ يومٍ مزدحم.</p>
+            </div>
+            <svg class="svc__icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 20c-4.5-2-7-5.5-7-9 2.5 0 5 1.2 7 3.5C14 12.2 16.5 11 19 11c0 3.5-2.5 7-7 9z"/><path d="M12 14.5C10.5 11 11 7 12 4c1 3 1.5 7 0 10.5"/></svg>
+          </li>
+          <li class="svc__item svc__item--feature reveal">
+            <span class="svc__no">05</span>
+            <div class="svc__body">
+              <h3 data-i18n="s5t">باقة العريس</h3>
+              <p data-i18n="s5d">تجربةٌ متكاملة ليومك الأهم: الشعر واللحية والبشرة والاسترخاء، بتفاصيل تليق بالمناسبة.</p>
+            </div>
+            <svg class="svc__icon" viewBox="0 0 24 24" aria-hidden="true"><path d="m12 3 2.6 5.3 5.9.9-4.3 4.1 1 5.8L12 16.4 6.8 19.1l1-5.8L3.5 9.2l5.9-.9z"/></svg>
+          </li>
+        </ol>
+
+        <div class="services__cta reveal">
+          <p data-i18n="servicesNote">لمعرفة الأسعار والمواعيد المتاحة، تواصل معنا مباشرةً.</p>
+          <a class="btn btn--ghost" href="https://wa.me/201044272482" target="_blank" rel="noopener" data-i18n="askWhatsapp">استفسر عبر واتساب</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Films -->
+    <section class="films section" id="films">
+      <div class="container">
+        <header class="section__head section__head--split">
+          <div>
+            <p class="eyebrow reveal" data-i18n="filmsEyebrow">من داخل 963</p>
+            <h2 class="h2 reveal" data-i18n="filmsTitle">حِرفيةٌ تراها بعينك</h2>
+          </div>
+          <a class="link-arrow reveal" href="https://www.instagram.com/963_salon/" target="_blank" rel="noopener">
+            <span data-i18n="followIg">تابعنا على إنستجرام</span>
+            <svg class="i flip" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17 17 7M8 7h9v9"/></svg>
+          </a>
+        </header>
+
+        <div class="films__grid">
+          <figure class="film reveal-frame">
+            <div class="frame">
+              <span class="frame__corner tl"></span><span class="frame__corner tr"></span>
+              <span class="frame__corner bl"></span><span class="frame__corner br"></span>
+              <div class="media" style="--ar: 720 / 1280">
+              <video class="media__video" data-src="asset/video/video1.mp4" poster="asset/video/video1-poster.jpg" muted loop playsinline preload="none" aria-label="Salon 963 — Film 01"></video>
+              <button class="media__sound" type="button" aria-pressed="false" aria-label="تشغيل الصوت">
+                <svg class="i i--off" viewBox="0 0 24 24" aria-hidden="true"><path d="M11 5 6 9H3v6h3l5 4z"/><path d="m22 9-6 6M16 9l6 6"/></svg>
+                <svg class="i i--on" viewBox="0 0 24 24" aria-hidden="true"><path d="M11 5 6 9H3v6h3l5 4z"/><path d="M15.5 8.5a5 5 0 0 1 0 7M19 5a10 10 0 0 1 0 14"/></svg>
+              </button>
+            </div>
+            </div>
+            <figcaption class="film__cap"><span class="film__no">01</span><span data-i18n="film1">التفاصيل</span></figcaption>
+          </figure>
+          <figure class="film film--offset reveal-frame">
+            <div class="frame">
+              <span class="frame__corner tl"></span><span class="frame__corner tr"></span>
+              <span class="frame__corner bl"></span><span class="frame__corner br"></span>
+              <div class="media" style="--ar: 960 / 720">
+              <video class="media__video" data-src="asset/video/video2.mp4" poster="asset/video/video2-poster.jpg" muted loop playsinline preload="none" aria-label="Salon 963 — Film 02"></video>
+              <button class="media__sound" type="button" aria-pressed="false" aria-label="تشغيل الصوت">
+                <svg class="i i--off" viewBox="0 0 24 24" aria-hidden="true"><path d="M11 5 6 9H3v6h3l5 4z"/><path d="m22 9-6 6M16 9l6 6"/></svg>
+                <svg class="i i--on" viewBox="0 0 24 24" aria-hidden="true"><path d="M11 5 6 9H3v6h3l5 4z"/><path d="M15.5 8.5a5 5 0 0 1 0 7M19 5a10 10 0 0 1 0 14"/></svg>
+              </button>
+            </div>
+            </div>
+            <figcaption class="film__cap"><span class="film__no">02</span><span data-i18n="film2">التجربة</span></figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- Experience -->
+    <section class="ritual section">
+      <div class="container">
+        <header class="section__head section__head--center">
+          <p class="eyebrow reveal" data-i18n="ritualEyebrow">التجربة</p>
+          <h2 class="h2 reveal" data-i18n="ritualTitle">ثلاث خطواتٍ لتبدو في أبهى حالاتك</h2>
+        </header>
+        <div class="ritual__grid">
+          <article class="ritual__step reveal">
+            <span class="ritual__n">I</span>
+            <h3 data-i18n="r1t">الاستشارة</h3>
+            <p data-i18n="r1d">نُصغي إلى ما تريده، ونقترح ما يناسب ملامحك وأسلوب حياتك.</p>
+          </article>
+          <article class="ritual__step reveal">
+            <span class="ritual__n">II</span>
+            <h3 data-i18n="r2t">الحِرفة</h3>
+            <p data-i18n="r2d">تنفيذٌ دقيق بأيدٍ خبيرة وأدواتٍ احترافية، دون عجلة.</p>
+          </article>
+          <article class="ritual__step reveal">
+            <span class="ritual__n">III</span>
+            <h3 data-i18n="r3t">اللمسة الأخيرة</h3>
+            <p data-i18n="r3d">تصفيفٌ وعنايةٌ ونصائح تحافظ بها على إطلالتك حتى زيارتك القادمة.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Visit -->
+    <section class="visit section" id="visit">
+      <div class="container visit__grid">
+        <div class="visit__info">
+          <p class="eyebrow reveal" data-i18n="visitEyebrow">العنوان والتواصل</p>
+          <h2 class="h2 reveal" data-i18n="visitTitle">في قلب القاهرة الجديدة</h2>
+          <ul class="contact">
+            <li class="reveal">
+              <svg class="i" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s-7-6.2-7-11a7 7 0 0 1 14 0c0 4.8-7 11-7 11z"/><circle cx="12" cy="10" r="2.5"/></svg>
+              <div>
+                <span class="contact__k" data-i18n="addrK">العنوان</span>
+                <span class="contact__v" data-i18n="addrV">إكس مول، التجمع الأول، القاهرة الجديدة</span>
+              </div>
+            </li>
+            <li class="reveal">
+              <svg class="i" viewBox="0 0 24 24" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.7a2 2 0 0 1-.5 2.1L8 9.8a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.7.7a2 2 0 0 1 1.7 2z"/></svg>
+              <div>
+                <span class="contact__k" data-i18n="phoneK">الهاتف</span>
+                <a class="contact__v" href="tel:+201044272482" dir="ltr">+20 104 427 2482</a>
+              </div>
+            </li>
+            <li class="reveal">
+              <svg class="i" viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r=".6" fill="currentColor"/></svg>
+              <div>
+                <span class="contact__k">Instagram</span>
+                <a class="contact__v" href="https://www.instagram.com/963_salon/" target="_blank" rel="noopener" dir="ltr">@963_salon</a>
+              </div>
+            </li>
+          </ul>
+          <div class="visit__cta reveal">
+            <a class="btn btn--gold" href="https://maps.app.goo.gl/QwZNKHM9YWrhKp6H7" target="_blank" rel="noopener">
+              <span data-i18n="directions">اعرض الموقع على الخريطة</span>
+              <svg class="i flip" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17 17 7M8 7h9v9"/></svg>
+            </a>
+            <a class="btn btn--ghost" href="tel:+201044272482" data-i18n="callUs">اتصل بنا</a>
+          </div>
+        </div>
+
+        <div class="visit__map reveal-frame">
+          <div class="frame frame--map">
+            <span class="frame__corner tl"></span><span class="frame__corner tr"></span>
+            <span class="frame__corner bl"></span><span class="frame__corner br"></span>
+            <a class="map-link" href="https://maps.app.goo.gl/QwZNKHM9YWrhKp6H7" target="_blank" rel="noopener" aria-label="Google Maps — Salon 963, X Mall">
+              <iframe data-src="https://www.google.com/maps?q=30.0433157,31.4676808&z=17&output=embed" title="Salon 963 — X Mall, New Cairo" loading="lazy" referrerpolicy="no-referrer-when-downgrade" tabindex="-1" aria-hidden="true"></iframe>
+              <span class="map-link__chip">
+                <svg class="i" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s-7-6.2-7-11a7 7 0 0 1 14 0c0 4.8-7 11-7 11z"/><circle cx="12" cy="10" r="2.5"/></svg>
+                <span data-i18n="openMaps">افتح في خرائط جوجل</span>
+              </span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Final CTA -->
+    <section class="finale">
+      <div class="finale__mark logo-shape" aria-hidden="true"></div>
+      <div class="container finale__inner">
+        <h2 class="finale__title reveal" data-i18n="finaleTitle">موعدك القادم يبدأ برسالة</h2>
+        <a class="btn btn--gold btn--lg reveal" href="https://wa.me/201044272482" target="_blank" rel="noopener">
+          <span data-i18n="bookNow">احجز الآن</span>
+          <svg class="i flip" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+        </a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer__inner">
+      <div class="brand brand--foot">
+        <img class="brand__logo" src="asset/logo-badge.png" alt="Salon 963" width="64" height="64" loading="lazy">
+      </div>
+      <p class="footer__copy">© <span id="year"></span> Salon <span class="n963">963</span>. <span data-i18n="rights">جميع الحقوق محفوظة.</span></p>
+      <a class="footer__top" href="#hero" data-i18n="backTop">العودة إلى الأعلى ↑</a>
+    </div>
+  </footer>
+
+  <a class="wa-float" href="https://wa.me/201044272482" target="_blank" rel="noopener" aria-label="WhatsApp">
+    <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 21l1.6-4.7A8.5 8.5 0 1 1 8 19.6L3 21z"/><path d="M9 8.5c0 3.5 3 6.5 6.5 6.5l1-1.6-2-1-1 .8a5 5 0 0 1-2.7-2.7l.8-1-1-2L9 8.5z" fill="currentColor" stroke="none"/></svg>
+  </a>
+
+  <script src="i18n.js"></script>
+  <script src="main.js"></script>
+</body>
+</html>
